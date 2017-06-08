@@ -60,6 +60,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    //  res.send('About Page1');
+    res.render('projects.hbs', {
+        title: 'projects hbs',
+        //  year: new Date().getFullYear()
+    });
+});
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: `Avv that's bad url..`
